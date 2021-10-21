@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width">
+</head>
+<body>
+    <!--Оболочка для демонстрации-->
+    <div class="wrapper">
+        <!--Контент-->
+        <header class="header">
+            <div class="container">
+                <div class="header__body">
+                    <div class="select-language">
+                    <label class="select" for="slct">
+                        <select id="slct" required="required">
+                          <option value="" disabled="disabled" selected="selected"
+                            >Select language</option>
+                            <optgroup label="Страна">
+                                <option value="#">🇺🇸 United States</option>
+                                <option value="#">🇳🇱 Netherlands</option>
+                                <option value="#">🇧🇾 Беларусь</option>
+                                <option value="#">🇷🇺 Россия</option>
+                                <option value="#">🇰🇿 Казахстан</option>
+                                <option value="#">🇹🇷 Türkiye</option>
+                            </optgroup>
+                          
+                        </select>
+                        <svg>
+                          <use xlink:href="#select-arrow-down"></use>
+                        </svg>
+                      </label>
+                      <!-- SVG Sprites-->
+                      <svg class="sprites">
+                        <symbol id="select-arrow-down" viewbox="0 0 10 6">
+                          <polyline points="1 1 5 5 9 1"></polyline>
+                        </symbol>
+                      </svg>
+                    </div>
+                    <div class="header__burger">
+                        <span></span>
+                    </div>
+                    <nav class="header__menu">
+                        <ul class="header__list">
+                            
+                            <li>      
+                                <label for="menu-2" class="header__link"><p>Services</p><div></div></label>
+                                <input type="checkbox" id="menu-2" name="menu-2" class="menu-checkbox">
+                                <div class="menu">
+                                  <label class="menu-toggle" for="menu-2"><div></div><span>Services</span></label>
+                                  <ul class="inner__list">
+                                    <li>
+                                        <label for="menu-3" class="header__link"><p>Облачные вычисления</p><div></div></label>
+                                        <input type="checkbox" id="menu-3" name="menu-3" class="menu-checkbox">
+                                        <div class="menu">
+                                          <label class="menu-toggle" for="menu-3"><div></div><span>Облачные вычисления</span><span class="border-line"></span></label>
+                                          <ul class="inner__list">
+                                              <li>
+                                                <div class="description-name">Cloud consulting</div>
+                                                <div class="description">Relational database services for MySQL, PostgreSQL, and SQL server.</div>
+                                              </li>
+                                              <li>
+                                                <div class="description-name">Cloud infrastructure analytics</div>
+                                                <div class="description">Health-specific solutions to enhance the patient experience.</div>
+                                              </li>
+                                              <li>
+                                                <div class="description-name">Hybrid Cloud</div>
+                                                <div class="description">Data storage, AI, and analytics solutions for government agencies.</div>
+                                              </li>
+                                              <li>
+                                                <div class="description-name">Hybrid Cloud</div>
+                                                <div class="description">Data storage, AI, and analytics solutions for government agencies.</div>
+                                              </li>
+                                              <li>
+                                                <div class="description-name">Multicloud</div>
+                                                <div class="description">Relational database services for MySQL, PostgreSQL, and SQL server.</div>
+                                              </li>
+                                              
+                                          </ul>
+                                    </li>
+                                    <li >
+                                        <a href="" class="header__link">Выделенные серверы<div class="unclicked"></div></a>
+                                    </li>
+                                    <li >
+                                        <a href="" class="header__link">Платформенные сервисы<div class="unclicked"></div></a>
+                                    </li>
+                                    <li >
+                                        <a href="" class="header__link">Информационная безопасность<div class="unclicked"></div></a>
+                                    </li>
+                                  </ul>
+                                </div>
+                            </li>
+
+                            <li >
+                                <a href="" class="header__link">Managed IT<div class="unclicked"></div></a>
+                            </li>
+                            <li>
+                                <a href="" class="header__link">Telecom Solutions<div class="unclicked"></div></a>
+                            </li>
+                            <li>
+                                <a href="" class="header__link">About Us<div class="unclicked"></div></a>
+                            </li>
+                        </ul>
+                        <ul class="channel">
+                            <li>
+                                <a href="" class="header__link">Контакты</a>
+                            </li>
+                            <li>
+                                <a href="" class="header__link">Поиск</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <div class="content">
+            <div class="container">
+                <div class="content__text">
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni iure, ab unde quam iste facere dignissimos nihil libero sequi tempore possimus excepturi ea molestias impedit dicta natus recusandae, officiis accusamus.
+                    </p>
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni iure, ab unde quam iste facere dignissimos nihil libero sequi tempore possimus excepturi ea molestias impedit dicta natus recusandae, officiis accusamus.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
